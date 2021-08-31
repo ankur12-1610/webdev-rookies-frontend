@@ -78,9 +78,9 @@ export default function Task(props) {
                         <div>
                             <p style={{marginBottom:"0px",fontSize:"medium"}}>Due Date : {props.data["Due_Date"]}</p>
                         </div>
-                        <div>
+                        {/* <div>
                             <p className="LT" style={{marginBottom:"2px",fontSize:"medium"}}>Graded Status : {props.data["Graded_Status"]}</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

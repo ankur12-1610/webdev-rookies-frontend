@@ -1,6 +1,6 @@
 import React from 'react'
 import Task from './task/Task.js'
-import { Route, Switch, withRouter, Redirect, BrowserRouter} from 'react-router-dom';
+import { Route, Switch, withRouter, Redirect, BrowserRouter, useHistory} from 'react-router-dom';
 import AssignmentOpened from '../assignmentOpened/AssignmentOpened.js';
 import NavBar from '../../navbar/navbar.js';
 import { Button, Modal, Form } from 'react-bootstrap';
@@ -10,6 +10,7 @@ import {useAlert} from 'react-alert'
 
 function MyVerticallyCenteredModal(props) {
     const alert = useAlert()
+    const history = useHistory()
     const getClassId = async () => {
         try {
             const res = await myaxios({
@@ -50,6 +51,7 @@ function MyVerticallyCenteredModal(props) {
                     })
                     console.log(res)
                     props.onHide()
+                    history.push("/")
                 } catch(err) {
                     console.log(err)
                     console.log(err.response)
@@ -123,6 +125,7 @@ export default function Body() {
             <MyVerticallyCenteredModal
             show={modalShow}
             onHide={() => setModalShow(false)}
+            
             />
         </>
     )
