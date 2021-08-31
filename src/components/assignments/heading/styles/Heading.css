@@ -1,0 +1,19 @@
+.Assignment_Heading{
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    padding-left:6% ;
+    /* height: 10px; */
+}
+
+@media (max-width: 1024px) {
+    .Assignment_Heading{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .Assignment_Heading{white-space: normal;
+        margin-top: 45px;
+        margin-bottom:10px;
+    }
+}
