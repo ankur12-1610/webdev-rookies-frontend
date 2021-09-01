@@ -31,7 +31,7 @@ export default function Menu() {
                     </h4>
                 </div>
             </Button>
-            <br/>
+            {/* <br/>
             <div style={{borderBottom:"1px solid black", width:"100%"}}></div>
             <br/>
             <Button style={{background:"none", border:"none", width:"100%"}} variant="dark" >
@@ -43,7 +43,7 @@ export default function Menu() {
                 </div>
             </Button>
             <br/>
-            <br/>
+            <br/> */}
             <Button style={{background:"none", border:"none", width:"100%"}} variant="dark" as={Link} to="/Assignments">
                 <div style={{display:"flex"}}>
                     <Image src={TodoIcon} width="30px" height="30px" /> 
